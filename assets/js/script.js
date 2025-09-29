@@ -42,7 +42,6 @@ document.querySelectorAll(".nav-link").forEach((link) => {
 });
 
 // Lightbox/Carousel para Portfolio
-// Lightbox/Carousel para Portfolio
 window.addEventListener("load", function () {
   /**
    * Galería personalizada para el lightbox.
@@ -67,16 +66,16 @@ window.addEventListener("load", function () {
         title: "Edificio Residencial",
         desc: "Mallas de seguridad en balcones",
       },
-      {
-        src: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80",
-        title: "Edificio Residencial - Extra 1",
-        desc: "Vista adicional 1",
-      },
-      {
-        src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
-        title: "Edificio Residencial - Extra 2",
-        desc: "Vista adicional 2",
-      },
+      // {
+      //   src: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80",
+      //   title: "Edificio Residencial - Extra 1",
+      //   desc: "Vista adicional 1",
+      // },
+      // {
+      //   src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+      //   title: "Edificio Residencial - Extra 2",
+      //   desc: "Vista adicional 2",
+      // },
     ],
     [
       {
@@ -84,16 +83,16 @@ window.addEventListener("load", function () {
         title: "Vivienda Familiar",
         desc: "Protección para terraza y jardín",
       },
-      {
-        src: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80",
-        title: "Vivienda Familiar - Extra 1",
-        desc: "Vista adicional 1",
-      },
-      {
-        src: "https://images.unsplash.com/photo-1465101178521-c1a9136a3fdc?auto=format&fit=crop&w=800&q=80",
-        title: "Vivienda Familiar - Extra 2",
-        desc: "Vista adicional 2",
-      },
+      // {
+      //   src: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80",
+      //   title: "Vivienda Familiar - Extra 1",
+      //   desc: "Vista adicional 1",
+      // },
+      // {
+      //   src: "https://images.unsplash.com/photo-1465101178521-c1a9136a3fdc?auto=format&fit=crop&w=800&q=80",
+      //   title: "Vivienda Familiar - Extra 2",
+      //   desc: "Vista adicional 2",
+      // },
     ],
     [
       {
@@ -164,6 +163,84 @@ window.addEventListener("load", function () {
       },
     ],
   ];
+
+  // Adding all images from malla_Edificio to the lightbox gallery for Mallas para Edificios
+  lightboxGallery[0].push(
+    {
+      src: "assets/img/trabajos/malla_Edificio/balcon_Mallas_Saru_Chile_1.jpg?format=auto",
+      title: "Balcon Mallas Saru Chile 1",
+      desc: "Protección en balcones con mallas de alta calidad.",
+    },
+    {
+      src: "assets/img/trabajos/malla_Edificio/balcon_Mallas_Saru_Chile_2.jpg?format=auto",
+      title: "Balcon Mallas Saru Chile 2",
+      desc: "Instalación profesional en balcones residenciales.",
+    },
+    {
+      src: "assets/img/trabajos/malla_Edificio/balcon_Mallas_Saru_Chile_3.jpg?format=auto",
+      title: "Balcon Mallas Saru Chile 3",
+      desc: "Seguridad y estética en altura.",
+    },
+    {
+      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Proteccion_Ventanas1.jpg?format=auto",
+      title: "Protección Ventanas 1",
+      desc: "Mallas de seguridad para ventanas.",
+    },
+    {
+      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Proteccion_Ventanas2.jpg?format=auto",
+      title: "Protección Ventanas 2",
+      desc: "Instalación de mallas en ventanas residenciales.",
+    },
+    {
+      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Altura1.jpg?format=auto",
+      title: "Seguridad en Altura 1",
+      desc: "Protección en altura con mallas resistentes.",
+    },
+    {
+      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Altura2.jpg?format=auto",
+      title: "Seguridad en Altura 2",
+      desc: "Mallas de alta calidad para seguridad en altura.",
+    },
+    {
+      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Altura3.jpg?format=auto",
+      title: "Seguridad en Altura 3",
+      desc: "Instalación profesional de mallas en altura.",
+    },
+    {
+      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Altura5.jpg?format=auto",
+      title: "Seguridad en Altura 5",
+      desc: "Protección confiable en áreas de altura.",
+    },
+    {
+      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Altura6.jpg?format=auto",
+      title: "Seguridad en Altura 6",
+      desc: "Mallas resistentes para balcones y ventanas.",
+    }
+  );
+
+  // Adding all images from malla_Residencial to the lightbox gallery for Vivienda Familiar
+  lightboxGallery[1].push(
+    {
+      src: "assets/img/trabajos/malla_Residencial/mallas_Saru_Proteccion_Escalera1.jpg?format=auto",
+      title: "Protección Escalera 1",
+      desc: "Mallas de seguridad para escaleras residenciales.",
+    },
+    {
+      src: "assets/img/trabajos/malla_Residencial/mallas_Saru_Proteccion_Escalera2.jpg?format=auto",
+      title: "Protección Escalera 2",
+      desc: "Instalación de mallas en escaleras interiores.",
+    },
+    {
+      src: "assets/img/trabajos/malla_Residencial/mallas_Saru_Proteccion_Escalera3.jpg?format=auto",
+      title: "Protección Escalera 3",
+      desc: "Soluciones de seguridad para escaleras modernas.",
+    },
+    {
+      src: "assets/img/trabajos/malla_Residencial/mallas_Saru_Proteccion_Ventanas3.jpg?format=auto",
+      title: "Protección Ventanas 3",
+      desc: "Mallas de seguridad para ventanas residenciales.",
+    }
+  );
 
   const lightboxModal = document.getElementById("lightboxModal");
   const lightboxImg = document.getElementById("lightboxImg");
