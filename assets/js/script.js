@@ -227,17 +227,17 @@ window.addEventListener("load", function () {
     },
     {
       src: "assets/img/trabajos/malla_Residencial/mallas_Saru_Proteccion_Escalera2.jpg?format=auto",
-      title: "Protección Escalera 2",
+      title: "Protección Escalera",
       desc: "Instalación de mallas en escaleras interiores.",
     },
     {
       src: "assets/img/trabajos/malla_Residencial/mallas_Saru_Proteccion_Escalera3.jpg?format=auto",
-      title: "Protección Escalera 3",
+      title: "Protección Escalera",
       desc: "Soluciones de seguridad para escaleras modernas.",
     },
     {
       src: "assets/img/trabajos/malla_Residencial/mallas_Saru_Proteccion_Ventanas3.jpg?format=auto",
-      title: "Protección Ventanas 3",
+      title: "Protección Ventanas",
       desc: "Mallas de seguridad para ventanas residenciales.",
     }
   );
