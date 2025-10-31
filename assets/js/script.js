@@ -100,67 +100,27 @@ window.addEventListener("load", function () {
         title: "Centro Educativo",
         desc: "Protección en escaleras y ventanas",
       },
-      {
-        src: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80",
-        title: "Centro Educativo - Extra 1",
-        desc: "Vista adicional 1",
-      },
-      {
-        src: "https://images.unsplash.com/photo-1465101178521-c1a9136a3fdc?auto=format&fit=crop&w=800&q=80",
-        title: "Centro Educativo - Extra 2",
-        desc: "Vista adicional 2",
-      },
     ],
     [
       {
-        src: "https://images.unsplash.com/photo-1504309092620-4d0ec726efa4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80",
-        title: "Instalación Industrial",
-        desc: "Mallas de seguridad en altura",
-      },
-      {
-        src: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80",
-        title: "Instalación Industrial - Extra 1",
-        desc: "Vista adicional 1",
-      },
-      {
-        src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
-        title: "Instalación Industrial - Extra 2",
-        desc: "Vista adicional 2",
+        src: "/assets/img/trabajos/convenios/tarjeta_Vecino_viveLaForida_Mallas_Saru_4.jpg?format=auto",
+        title: "Convenios",
+        desc: "Descuentos especiales con tarjeta Vecino Vive La Florida",
       },
     ],
     [
-      {
-        src: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80",
-        title: "Proyecto Arquitectónico",
-        desc: "Integración estética y funcional",
-      },
-      {
-        src: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80",
-        title: "Proyecto Arquitectónico - Extra 1",
-        desc: "Vista adicional 1",
-      },
-      {
-        src: "https://images.unsplash.com/photo-1465101178521-c1a9136a3fdc?auto=format&fit=crop&w=800&q=80",
-        title: "Proyecto Arquitectónico - Extra 2",
-        desc: "Vista adicional 2",
-      },
+      // {
+      //   src: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80",
+      //   title: "Proyecto Arquitectónico",
+      //   desc: "Integración estética y funcional",
+      // },
     ],
     [
-      {
-        src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80",
-        title: "Área de Piscina",
-        desc: "Seguridad para niños y mascotas",
-      },
-      {
-        src: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80",
-        title: "Área de Piscina - Extra 1",
-        desc: "Vista adicional 1",
-      },
-      {
-        src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
-        title: "Área de Piscina - Extra 2",
-        desc: "Vista adicional 2",
-      },
+      // {
+      //   src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80",
+      //   title: "Área de Piscina",
+      //   desc: "Seguridad para niños y mascotas",
+      // },
     ],
   ];
 
@@ -168,52 +128,102 @@ window.addEventListener("load", function () {
   lightboxGallery[0].push(
     {
       src: "assets/img/trabajos/malla_Edificio/balcon_Mallas_Saru_Chile_1.jpg?format=auto",
-      title: "Balcon Mallas Saru Chile 1",
+      title: "Balcon Mallas Saru Chile",
       desc: "Protección en balcones con mallas de alta calidad.",
     },
     {
       src: "assets/img/trabajos/malla_Edificio/balcon_Mallas_Saru_Chile_2.jpg?format=auto",
-      title: "Balcon Mallas Saru Chile 2",
+      title: "Balcon Mallas Saru Chile",
       desc: "Instalación profesional en balcones residenciales.",
     },
     {
       src: "assets/img/trabajos/malla_Edificio/balcon_Mallas_Saru_Chile_3.jpg?format=auto",
-      title: "Balcon Mallas Saru Chile 3",
+      title: "Balcon Mallas Saru Chile",
       desc: "Seguridad y estética en altura.",
     },
     {
       src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Proteccion_Ventanas1.jpg?format=auto",
-      title: "Protección Ventanas 1",
+      title: "Protección Ventanas",
       desc: "Mallas de seguridad para ventanas.",
     },
     {
       src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Proteccion_Ventanas2.jpg?format=auto",
-      title: "Protección Ventanas 2",
+      title: "Protección Ventanas",
       desc: "Instalación de mallas en ventanas residenciales.",
     },
     {
       src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Altura1.jpg?format=auto",
-      title: "Seguridad en Altura 1",
+      title: "Seguridad en Altura",
       desc: "Protección en altura con mallas resistentes.",
     },
     {
       src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Altura2.jpg?format=auto",
-      title: "Seguridad en Altura 2",
+      title: "Seguridad en Altura",
       desc: "Mallas de alta calidad para seguridad en altura.",
     },
     {
       src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Altura3.jpg?format=auto",
-      title: "Seguridad en Altura 3",
+      title: "Seguridad en Altura",
       desc: "Instalación profesional de mallas en altura.",
     },
     {
       src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Altura5.jpg?format=auto",
-      title: "Seguridad en Altura 5",
+      title: "Seguridad en Altura",
       desc: "Protección confiable en áreas de altura.",
     },
     {
       src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Altura6.jpg?format=auto",
-      title: "Seguridad en Altura 6",
+      title: "Seguridad en Altura",
+      desc: "Mallas resistentes para balcones y ventanas.",
+    },
+    {
+      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Balcones1.jpg?format=auto",
+      title: "Seguridad en Balcones",
+      desc: "Mallas resistentes para balcones y ventanas.",
+    },
+    {
+      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Balcones2.jpg?format=auto",
+      title: "Seguridad en Balcones",
+      desc: "Mallas resistentes para balcones y ventanas.",
+    },
+    {
+      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Balcones3.jpg?format=auto",
+      title: "Seguridad en Balcones",
+      desc: "Mallas resistentes para balcones y ventanas.",
+    },
+    {
+      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Balcones4.jpg?format=auto",
+      title: "Seguridad en Balcones",
+      desc: "Mallas resistentes para balcones y ventanas.",
+    },
+    {
+      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Balcones5.jpg?format=auto",
+      title: "Seguridad en Balcones",
+      desc: "Mallas resistentes para balcones y ventanas.",
+    },
+    {
+      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Balcones6.jpg?format=auto",
+      title: "Seguridad en Balcones",
+      desc: "Mallas resistentes para balcones y ventanas.",
+    },
+    {
+      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Balcones7.jpg?format=auto",
+      title: "Seguridad en Balcones",
+      desc: "Mallas resistentes para balcones y ventanas.",
+    },
+    {
+      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Balcones8.jpg?format=auto",
+      title: "Seguridad en Balcones",
+      desc: "Mallas resistentes para balcones y ventanas.",
+    },
+    {
+      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Balcones9.jpg?format=auto",
+      title: "Seguridad en Balcones",
+      desc: "Mallas resistentes para balcones y ventanas.",
+    },
+    {
+      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Balcones10.jpg?format=auto",
+      title: "Seguridad en Balcones",
       desc: "Mallas resistentes para balcones y ventanas.",
     }
   );
@@ -241,6 +251,33 @@ window.addEventListener("load", function () {
       desc: "Mallas de seguridad para ventanas residenciales.",
     }
   );
+  lightboxGallery[3].push(
+    {
+      src: "/assets/img/trabajos/convenios/tarjeta_Vecino_viveLaForida_Mallas_Saru_1.jpg?format=auto",
+      title: "Convenio Tarjeta Vecino Vive La Forida",
+      desc: "Si cuentas con tu tarjeta Vecino obtienes descuentos especiales en nuestros servicios.",
+    },
+    {
+      src: "/assets/img/trabajos/convenios/tarjeta_Vecino_viveLaForida_Mallas_Saru_2.jpg?format=auto",
+      title: "Convenio Tarjeta Vecino Vive La Forida",
+      desc: "Si cuentas con tu tarjeta Vecino obtienes descuentos especiales en nuestros servicios.",
+    },
+    {
+      src: "/assets/img/trabajos/convenios/tarjeta_Vecino_viveLaForida_Mallas_Saru_3.jpg?format=auto",
+      title: "Convenio Tarjeta Vecino Vive La Forida",
+      desc: "Si cuentas con tu tarjeta Vecino obtienes descuentos especiales en nuestros servicios.",
+    },
+    {
+      src: "/assets/img/trabajos/clientes_satisfechos/tarjeta_Vecino_viveLaForida_Mallas_Saru_4.jpg?format=auto",
+      title: "Convenio Tarjeta Vecino Vive La Forida",
+      desc: "Si cuentas con tu tarjeta Vecino obtienes descuentos especiales en nuestros servicios.",
+    }
+  );
+  lightboxGallery[4].push({
+    src: "assets/img/trabajos/clientes_Satisfechos/mallasSaru_Proteccion_Mascotas1.jpg?format=auto",
+    title: "Protección Mascotas",
+    desc: "Mallas de seguridad para proteger a tus mascotas.",
+  });
 
   const lightboxModal = document.getElementById("lightboxModal");
   const lightboxImg = document.getElementById("lightboxImg");
