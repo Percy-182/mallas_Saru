@@ -60,6 +60,7 @@ window.addEventListener("load", function () {
    */
   // Galería de imágenes agrupadas por cada item del grid (cada grupo puede tener imágenes adicionales)
   const lightboxGallery = [
+    //Mallas para Edificios//
     [
       {
         src: "https://cl.habcdn.com/photos/business/big/img-20190812-183839-381807.jpg",
@@ -77,6 +78,7 @@ window.addEventListener("load", function () {
       //   desc: "Vista adicional 2",
       // },
     ],
+    //Mallas Residenciales//
     [
       {
         src: "https://cl.habcdn.com/photos/project/big/cobertizo-257384.jpg",
@@ -94,13 +96,9 @@ window.addEventListener("load", function () {
       //   desc: "Vista adicional 2",
       // },
     ],
-    [
-      {
-        src: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80",
-        title: "Centro Educativo",
-        desc: "Protección en escaleras y ventanas",
-      },
-    ],
+    // Trabajos Mallas Institucionales//
+    [],
+    //Convenios//
     [
       {
         src: "/assets/img/trabajos/convenios/tarjeta_Vecino_viveLaForida_Mallas_Saru_4.jpg?format=auto",
@@ -108,6 +106,7 @@ window.addEventListener("load", function () {
         desc: "Descuentos especiales con tarjeta Vecino Vive La Florida",
       },
     ],
+    //Clientes Satisfechos//
     [
       // {
       //   src: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80",
@@ -115,6 +114,7 @@ window.addEventListener("load", function () {
       //   desc: "Integración estética y funcional",
       // },
     ],
+    //Mantenimiento y Reparación//
     [
       // {
       //   src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80",
@@ -268,7 +268,7 @@ window.addEventListener("load", function () {
       desc: "Si cuentas con tu tarjeta Vecino obtienes descuentos especiales en nuestros servicios.",
     },
     {
-      src: "/assets/img/trabajos/clientes_satisfechos/tarjeta_Vecino_viveLaForida_Mallas_Saru_4.jpg?format=auto",
+      src: "/assets/img/trabajos/convenios/tarjeta_Vecino_viveLaForida_Mallas_Saru_4.jpg?format=auto",
       title: "Convenio Tarjeta Vecino Vive La Forida",
       desc: "Si cuentas con tu tarjeta Vecino obtienes descuentos especiales en nuestros servicios.",
     }
@@ -278,6 +278,18 @@ window.addEventListener("load", function () {
     title: "Protección Mascotas",
     desc: "Mallas de seguridad para proteger a tus mascotas.",
   });
+  lightboxGallery[5].push(
+    {
+      src: "/assets/img/trabajos/mantenimiento/mantenimiento_Mallas_Saru_1.jpg?format=auto",
+      title: "Mantenimiento de Mallas",
+      desc: "Servicios de mantenimiento para mallas de seguridad.",
+    },
+    {
+      src: "/assets/img/trabajos/mantenimiento/mantenimiento_Mallas_Saru_2.jpg?format=auto",
+      title: "Mantenimiento de Mallas",
+      desc: "Servicios de mantenimiento para mallas de seguridad.",
+    }
+  );
 
   const lightboxModal = document.getElementById("lightboxModal");
   const lightboxImg = document.getElementById("lightboxImg");
