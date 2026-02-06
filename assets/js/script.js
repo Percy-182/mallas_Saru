@@ -249,6 +249,11 @@ window.addEventListener("load", function () {
       src: "assets/img/trabajos/malla_Residencial/mallas_Saru_Proteccion_Ventanas3.jpg?format=auto",
       title: "Protección Ventanas",
       desc: "Mallas de seguridad para ventanas residenciales.",
+    },
+    {
+      src: "assets/img/trabajos/malla_Residencial/mallas-Saru_residencial.jpg?format=auto",
+      title: "Protección de Ventanas",
+      desc: "Mallas de seguridad para ventanas residenciales.",
     }
   );
   lightboxGallery[3].push(
@@ -273,11 +278,38 @@ window.addEventListener("load", function () {
       desc: "Si cuentas con tu tarjeta Vecino obtienes descuentos especiales en nuestros servicios.",
     }
   );
-  lightboxGallery[4].push({
-    src: "assets/img/trabajos/clientes_Satisfechos/mallasSaru_Proteccion_Mascotas1.jpg?format=auto",
-    title: "Protección Mascotas",
-    desc: "Mallas de seguridad para proteger a tus mascotas.",
-  });
+  lightboxGallery[4].push(
+    {
+      src: "assets/img/trabajos/clientes_Satisfechos/mallasSaru_Proteccion_Mascotas1.jpg?format=auto",
+      title: "Protección Mascotas",
+      desc: "Mallas de seguridad para proteger a tus mascotas.",
+    },
+    {
+      src: "assets/img/trabajos/clientes_Satisfechos/mallasSaru_Proteccion_Mascotas2.jpg?format=auto",
+      title: "Protección Mascotas",
+      desc: "Mallas de seguridad para proteger a tus mascotas.",
+    },
+    {
+      src: "assets/img/trabajos/clientes_Satisfechos/mallasSaru_Proteccion_Mascotas3.jpg?format=auto",
+      title: "Protección Mascotas",
+      desc: "Mallas de seguridad para proteger a tus mascotas.",
+    },
+    {
+      src: "assets/img/trabajos/clientes_Satisfechos/mallasSaru_Proteccion_Mascotas4.jpg?format=auto",
+      title: "Protección Mascotas",
+      desc: "Mallas de seguridad para proteger a tus mascotas.",
+    },
+    {
+      src: "assets/img/trabajos/clientes_Satisfechos/mallasSaru_Proteccion_Mascotas5.jpg?format=auto",
+      title: "Protección Mascotas",
+      desc: "Mallas de seguridad para proteger a tus mascotas.",
+    },
+    {
+      src: "assets/img/trabajos/clientes_Satisfechos/mallasSaru_Proteccion_Mascotas6.jpg?format=auto",
+      title: "Protección Mascotas",
+      desc: "Mallas de seguridad para proteger a tus mascotas.",
+    }
+  );
   lightboxGallery[5].push(
     {
       src: "/assets/img/trabajos/mantenimiento/mantenimiento_Mallas_Saru_1.jpg?format=auto",
@@ -286,6 +318,21 @@ window.addEventListener("load", function () {
     },
     {
       src: "/assets/img/trabajos/mantenimiento/mantenimiento_Mallas_Saru_2.jpg?format=auto",
+      title: "Mantenimiento de Mallas",
+      desc: "Servicios de mantenimiento para mallas de seguridad.",
+    },
+    {
+      src: "/assets/img/trabajos/mantenimiento/mantenimiento_Mallas_Saru_3.jpg?format=auto",
+      title: "Mantenimiento de Mallas",
+      desc: "Servicios de mantenimiento para mallas de seguridad.",
+    },
+    {
+      src: "/assets/img/trabajos/mantenimiento/mantenimiento_Mallas_Saru_4.jpg?format=auto",
+      title: "Mantenimiento de Mallas",
+      desc: "Servicios de mantenimiento para mallas de seguridad.",
+    },
+    {
+      src: "/assets/img/trabajos/mantenimiento/mantenimiento_Mallas_Saru_5.jpg?format=auto",
       title: "Mantenimiento de Mallas",
       desc: "Servicios de mantenimiento para mallas de seguridad.",
     }

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tu Sitio Web</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Estilos personalizados para el modal */
+      .descuento-modal .modal-content {
+        border-radius: 15px;
+        border: none;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      .descuento-modal .modal-header {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      .descuento-modal .modal-body {
+        padding-top: 0;
+      }
+
+      .descuento-badge {
+        background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+        color: white;
+        padding: 8px 20px;
+        border-radius: 30px;
+        font-weight: bold;
+        display: inline-block;
+        margin-bottom: 15px;
+      }
+
+      .btn-whatsapp {
+        background: linear-gradient(135deg, #25d366, #128c7e);
+        border: none;
+        border-radius: 30px;
+        padding: 12px 30px;
+        font-weight: bold;
+        color: white;
+        transition: transform 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin: 0 auto;
+      }
+
+      .btn-whatsapp:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        color: white;
+      }
+
+      .whatsapp-icon {
+        width: 20px;
+        height: 20px;
+      }
+
+      /* Animación de pulso para el badge */
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .descuento-badge {
+        animation: pulse 2s infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Contenido de tu página web existente -->
+    <div class="container mt-5">
+      <h1>Bienvenido a nuestro sitio web</h1>
+      <p>Este es el contenido normal de tu página...</p>
+    </div>
+
+    <!-- Modal de descuento -->
+    <div
+      class="modal fade descuento-modal"
+      id="modalDescuento"
+      tabindex="-1"
+      aria-labelledby="modalDescuentoLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <!-- Botón de cerrar CON data-bs-dismiss -->
+            <button
+              type="button"
+              class="btn-close position-absolute top-0 end-0 m-3"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center p-4">
+            <!-- Contenido del modal -->
+            <div class="descuento-badge">20% DE DESCUENTO</div>
+            <h3 class="mb-3">¡Bienvenido!</h3>
+            <p class="mb-4">Aprovecha nuestro descuento especial...</p>
+            <a href="#" id="btnWhatsApp" class="btn btn-whatsapp mb-3">
+              <svg
+                class="whatsapp-icon"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893c0-3.189-1.248-6.189-3.515-8.447"
+                />
+              </svg>
+              Contactar por WhatsApp
+            </a>
+            <p class="small text-muted">
+              Válido solo para nuevos clientes | Oferta por tiempo limitado
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle con Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript personalizado -->
+    <script>
+      // Configuración
+      const config = {
+        whatsappNumber: "123456789",
+        defaultMessage:
+          "Hola, me interesa el descuento del 20% en mi primer servicio. ¿Podrían proporcionarme más información?",
+        offerPercentage: "20%",
+      };
+
+      document.addEventListener("DOMContentLoaded", function () {
+        // Configurar WhatsApp
+        const btnWhatsApp = document.getElementById("btnWhatsApp");
+        btnWhatsApp.href = `https://wa.me/${
+          config.whatsappNumber
+        }?text=${encodeURIComponent(config.defaultMessage)}`;
+        btnWhatsApp.target = "_blank";
+
+        // Actualizar badge
+        document.querySelector(
+          ".descuento-badge"
+        ).textContent = `${config.offerPercentage} DE DESCUENTO`;
+
+        // Mostrar modal usando jQuery de Bootstrap (método más confiable)
+        setTimeout(() => {
+          const modal = new bootstrap.Modal(
+            document.getElementById("modalDescuento")
+          );
+          modal.show();
+        }, 1000);
+      });
+    </script>
+  </body>
+</html>
