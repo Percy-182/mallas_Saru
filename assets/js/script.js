@@ -9,15 +9,162 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 // Form submission
-document
-  .getElementById("cotizacionForm")
-  ?.addEventListener("submit", function (e) {
+// Enviar por AJAX a la URL definida en el atributo `action` del formulario.
+// Mostramos el mensaje de agradecimiento solo después de recibir respuesta exitosa.
+const cotizacionForm = document.getElementById("cotizacionForm");
+if (cotizacionForm) {
+  const handleCotizacionSubmit = async function (e) {
     e.preventDefault();
-    alert(
-      "¡Gracias por su solicitud! Nos pondremos en contacto a la brevedad."
-    );
-    this.reset();
+    const action = cotizacionForm.action;
+    const method = (cotizacionForm.method || "POST").toUpperCase();
+    const formData = new FormData(cotizacionForm);
+
+    try {
+      const resp = await fetch(action, {
+        method,
+        body: formData,
+        headers: {
+          // Solicitar respuesta JSON cuando el servidor lo soporte (Formspree lo hace)
+          Accept: "application/json",
+        },
+      });
+
+      const submitBtn = cotizacionForm.querySelector('button[type="submit"]');
+      // Obtener HTML original guardado (si existe) para restaurar luego
+      const originalBtnHtml = submitBtn
+        ? submitBtn.getAttribute("data-original") || submitBtn.innerHTML
+        : null;
+
+      // Log status and attempt to read body (clone to preserve original stream)
+      console.log("Form submit status:", resp.status, "ok:", resp.ok);
+      try {
+        const clone = resp.clone();
+        const contentType = resp.headers.get("content-type") || "";
+        if (contentType.includes("application/json")) {
+          const jsonBody = await clone.json().catch(() => null);
+          console.log("Response JSON:", jsonBody);
+        } else {
+          const textBody = await clone.text().catch(() => null);
+          console.log("Response body (text):", textBody);
+        }
+      } catch (logErr) {
+        console.warn("No se pudo leer el cuerpo de la respuesta:", logErr);
+      }
+
+      if (resp.ok) {
+        // Éxito: resetear formulario y mostrar toast nativo de Bootstrap
+        cotizacionForm.reset();
+        showBootstrapToast("¡Gracias! Su solicitud fue enviada.", "success");
+      } else {
+        showBootstrapToast(
+          "Ocurrió un error al enviar el formulario. Revise la consola.",
+          "danger"
+        );
+      }
+
+      // Restaurar botón al estado original
+      if (submitBtn && originalBtnHtml !== null) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnHtml;
+      }
+    } catch (err) {
+      console.error("Error enviando el formulario:", err);
+      // Fallback: si la petición AJAX falla (p. ej. CORS o red), intentar envío nativo
+      // quitamos el listener antes de reenviar para evitar bucle infinito
+      const submitBtn = cotizacionForm.querySelector('button[type="submit"]');
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML =
+          submitBtn.getAttribute("data-original") || "Enviar Solicitud";
+      }
+      cotizacionForm.removeEventListener("submit", handleCotizacionSubmit);
+      // Mostrar toast de error rápido y luego fallback a envío nativo
+      try {
+        showBootstrapToast(
+          "No se pudo enviar por AJAX. Se intentará el envío normal.",
+          "danger"
+        );
+      } catch (t) {
+        console.warn("No se pudo mostrar el toast:", t);
+      }
+      cotizacionForm.submit();
+    }
+  };
+
+  cotizacionForm.addEventListener("submit", handleCotizacionSubmit);
+}
+
+// Enhance submit button UX: attach a small helper that will set spinner when submit starts
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("cotizacionForm");
+  if (!form) return;
+  const submitBtn = form.querySelector('button[type="submit"]');
+  if (!submitBtn) return;
+  // store original HTML in data attribute
+  submitBtn.setAttribute("data-original", submitBtn.innerHTML);
+  // Observe submit via event delegation
+  form.addEventListener(
+    "submit",
+    function (e) {
+      // If the button is already disabled, do nothing
+      if (submitBtn.disabled) return;
+      // If the form is going to be handled by our fetch handler, show spinner
+      submitBtn.disabled = true;
+      submitBtn.innerHTML =
+        '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Enviando...';
+    },
+    { capture: true }
+  );
+});
+
+// showBootstrapToast: create a Bootstrap toast dynamically and show it
+function showBootstrapToast(message, variant = "success", delay = 4000) {
+  // container to append to
+  const container = document.getElementById("bsToastContainer");
+  if (!container) return; // no-op if container missing
+
+  const toastEl = document.createElement("div");
+  toastEl.className = "toast align-items-center text-bg-white border-0";
+  toastEl.setAttribute("role", "alert");
+  toastEl.setAttribute("aria-live", "assertive");
+  toastEl.setAttribute("aria-atomic", "true");
+  toastEl.style.minWidth = "220px";
+
+  const toastBody = document.createElement("div");
+  toastBody.className = "d-flex";
+
+  const bodyText = document.createElement("div");
+  bodyText.className = "toast-body";
+  bodyText.textContent = message;
+  // color accent left bar
+  const accent = document.createElement("div");
+  accent.style.width = "6px";
+  accent.style.marginRight = "10px";
+  accent.style.background = variant === "success" ? "#2ecc71" : "#e74c3c";
+
+  const closeBtn = document.createElement("button");
+  closeBtn.type = "button";
+  closeBtn.className = "btn-close btn-close-white me-2 m-auto";
+  closeBtn.setAttribute("data-bs-dismiss", "toast");
+  closeBtn.setAttribute("aria-label", "Close");
+
+  toastBody.appendChild(accent);
+  toastBody.appendChild(bodyText);
+  toastBody.appendChild(closeBtn);
+  toastEl.appendChild(toastBody);
+
+  container.appendChild(toastEl);
+
+  // Initialize and show via Bootstrap's JS API
+  // eslint-disable-next-line no-undef
+  const bsToast = new bootstrap.Toast(toastEl, { delay });
+  bsToast.show();
+
+  // Remove from DOM once hidden
+  toastEl.addEventListener("hidden.bs.toast", () => {
+    toastEl.remove();
   });
+}
 
 // Navbar background change on scroll
 window.addEventListener("scroll", function () {

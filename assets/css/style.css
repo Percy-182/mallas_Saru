@@ -587,3 +587,5 @@ img {
 #nosotros .fa-truck {
   color: var(--accent) !important;
 }
+
+/* Toast styles removed (using only button spinner visual). */
