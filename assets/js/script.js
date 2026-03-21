@@ -243,8 +243,6 @@ window.addEventListener("load", function () {
       //   desc: "Vista adicional 2",
       // },
     ],
-    // Trabajos Mallas Institucionales//
-    [],
     //Convenios//
     [
       {
@@ -403,7 +401,7 @@ window.addEventListener("load", function () {
       desc: "Mallas de seguridad para ventanas residenciales.",
     }
   );
-  lightboxGallery[3].push(
+  lightboxGallery[2].push(
     {
       src: "/assets/img/trabajos/convenios/tarjeta_Vecino_viveLaForida_Mallas_Saru_1.jpg?format=auto",
       title: "Convenio Tarjeta Vecino Vive La Forida",
@@ -425,7 +423,7 @@ window.addEventListener("load", function () {
       desc: "Si cuentas con tu tarjeta Vecino obtienes descuentos especiales en nuestros servicios.",
     }
   );
-  lightboxGallery[4].push(
+  lightboxGallery[3].push(
     {
       src: "assets/img/trabajos/clientes_Satisfechos/mallasSaru_Proteccion_Mascotas1.jpg?format=auto",
       title: "Protección Mascotas",
@@ -457,7 +455,7 @@ window.addEventListener("load", function () {
       desc: "Mallas de seguridad para proteger a tus mascotas.",
     }
   );
-  lightboxGallery[5].push(
+  lightboxGallery[4].push(
     {
       src: "/assets/img/trabajos/mantenimiento/mantenimiento_Mallas_Saru_1.jpg?format=auto",
       title: "Mantenimiento de Mallas",

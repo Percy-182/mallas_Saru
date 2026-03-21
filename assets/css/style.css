@@ -72,7 +72,10 @@
   cursor: pointer;
   z-index: 2100;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    box-shadow 0.2s;
 }
 .lightbox-prev:hover,
 .lightbox-next:hover {
@@ -192,7 +195,8 @@ h6 {
 }
 
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/mallas_deSeguridad_Saru.jpg") center/cover no-repeat;
   height: 80vh;
   display: flex;
@@ -284,6 +288,12 @@ h6 {
   padding: 1rem;
 }
 
+@media (min-width: 992px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .portfolio-item {
   border-radius: 8px;
   overflow: hidden;
@@ -296,7 +306,7 @@ h6 {
 .portfolio-item img {
   width: 100%;
   height: auto;
-  aspect-ratio: 4/3;
+  aspect-ratio: 1/1;
   object-fit: cover;
   display: block;
   transition: transform 0.5s;
@@ -419,6 +429,9 @@ h6 {
 }
 @media (max-width: 768px) {
   .portfolio-item {
+    aspect-ratio: 16/10;
+  }
+  .portfolio-item img {
     aspect-ratio: 16/10;
   }
 }
