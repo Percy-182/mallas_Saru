@@ -607,10 +607,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const btnWhatsApp = document.getElementById("btnWhatsApp");
   if (btnWhatsApp) {
-    btnWhatsApp.href = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+    const waHref = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
       defaultMessage,
     )}`;
+    btnWhatsApp.href = waHref;
     btnWhatsApp.target = "_blank";
+    btnWhatsApp.setAttribute("aria-label", "Enviar mensaje por WhatsApp");
+
+    btnWhatsApp.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.open(waHref, "_blank");
+    });
   }
 
   const badge = modalElement.querySelector(".descuento-badge");
