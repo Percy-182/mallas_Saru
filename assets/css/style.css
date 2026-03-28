@@ -259,6 +259,75 @@ h6 {
   transform: translateX(-50%);
 }
 
+/* Descuento modal */
+.descuento-modal .modal-content {
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.descuento-modal .modal-header {
+  border-bottom: none;
+  padding-bottom: 0;
+  position: relative;
+  min-height: 3rem;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.descuento-modal .modal-body {
+  padding-top: 0;
+}
+
+.descuento-badge {
+  background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 15px;
+  animation: pulse 2s infinite;
+}
+
+.btn-whatsapp {
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  border: none;
+  border-radius: 30px;
+  padding: 12px 30px;
+  font-weight: bold;
+  color: white;
+  transition: transform 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+.btn-whatsapp:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.whatsapp-icon {
+  width: 20px;
+  height: 20px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .service-card {
   background: white;
   border-radius: 10px;
@@ -362,18 +431,31 @@ h6 {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  width: 60px;
-  height: 60px;
+  min-width: 170px;
+  height: 48px;
   background-color: #25d366;
   color: white;
-  border-radius: 50%;
-  display: flex;
+  border-radius: 50px;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  gap: 8px;
+  font-size: 1rem;
+  padding: 0 14px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   transition: all 0.3s;
+}
+
+.whatsapp-text {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+.whatsapp-btn i {
+  font-size: 1.2rem;
 }
 
 .whatsapp-btn:hover {
@@ -558,9 +640,15 @@ footer {
   .whatsapp-btn {
     bottom: 20px;
     right: 20px;
-    width: 50px;
-    height: 50px;
-    font-size: 1.5rem;
+    min-width: 150px;
+    height: 44px;
+    font-size: 0.95rem;
+  }
+  .whatsapp-btn i {
+    font-size: 1.1rem;
+  }
+  .whatsapp-text {
+    display: none;
   }
 }
 

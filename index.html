@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -53,7 +53,9 @@
       href="https://api.whatsapp.com/send/?phone=56972022406&text&type=phone_number&app_absent=0"
       class="whatsapp-btn"
       target="_blank"
+      aria-label="Cotiza aquí por WhatsApp"
     >
+      <span class="whatsapp-text">Cotiza aquí</span>
       <i class="fab fa-whatsapp"></i>
     </a>
 
@@ -146,6 +148,48 @@
       </button>
     </div>
 
+    <!-- Modal de descuento -->
+    <div
+      class="modal fade descuento-modal"
+      id="modalDescuento"
+      tabindex="-1"
+      aria-labelledby="modalDescuentoLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-end">
+            <button
+              type="button"
+              class="btn-close m-3"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center p-4">
+            <div class="descuento-badge">20% DE DESCUENTO</div>
+            <h3 class="mb-3">¡Bienvenido!</h3>
+            <p class="mb-4">Aprovecha nuestro descuento especial...</p>
+            <a href="#" id="btnWhatsApp" class="btn btn-whatsapp mb-3">
+              <svg
+                class="whatsapp-icon"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893c0-3.189-1.248-6.189-3.515-8.447"
+                />
+              </svg>
+              Contactar por WhatsApp
+            </a>
+            <p class="small text-muted">
+              Válido solo para nuevos clientes | Oferta por tiempo limitado
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Services Section -->
     <section class="section bg-light" id="servicios">
       <div class="container">
@@ -234,7 +278,7 @@
         <div class="portfolio-grid">
           <div class="portfolio-item" data-index="0">
             <img
-              src="https://cl.habcdn.com/photos/business/big/img-20190812-183839-381807.jpg"
+              src="assets/img/trabajos/malla_Edificio/balcon_Mallas_Saru_Chile_2.jpg?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80"
               alt="Malla en edificio"
               loading="lazy"
               class="portfolio-img"
@@ -246,7 +290,7 @@
           </div>
           <div class="portfolio-item" data-index="1">
             <img
-              src="https://cl.habcdn.com/photos/project/big/cobertizo-257384.jpg"
+              src="assets/img/trabajos/malla_Residencial/mallas-Saru_residencial.jpg?format=auto/&auto=format&fit=crop&w=1950&q=80"
               alt="Casa con malla"
               loading="lazy"
               class="portfolio-img"
@@ -258,7 +302,7 @@
           </div>
           <div class="portfolio-item" data-index="2">
             <img
-              src="/assets/img/trabajos/convenios/tarjeta_Vecino_viveLaForida_Mallas_Saru_4.jpg?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80"
+              src="assets/img/trabajos/convenios/tarjeta_Vecino_viveLaForida_Mallas_Saru_4.jpg?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80"
               alt="convenio_mallas_Saru_tarjeta_vecino_la_florida"
               loading="lazy"
               class="portfolio-img"

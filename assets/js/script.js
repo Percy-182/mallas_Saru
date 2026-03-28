@@ -58,7 +58,7 @@ if (cotizacionForm) {
       } else {
         showBootstrapToast(
           "Ocurrió un error al enviar el formulario. Revise la consola.",
-          "danger"
+          "danger",
         );
       }
 
@@ -82,7 +82,7 @@ if (cotizacionForm) {
       try {
         showBootstrapToast(
           "No se pudo enviar por AJAX. Se intentará el envío normal.",
-          "danger"
+          "danger",
         );
       } catch (t) {
         console.warn("No se pudo mostrar el toast:", t);
@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
       submitBtn.innerHTML =
         '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Enviando...';
     },
-    { capture: true }
+    { capture: true },
   );
 });
 
@@ -227,11 +227,6 @@ window.addEventListener("load", function () {
     ],
     //Mallas Residenciales//
     [
-      {
-        src: "https://cl.habcdn.com/photos/project/big/cobertizo-257384.jpg",
-        title: "Vivienda Familiar",
-        desc: "Protección para terraza y jardín",
-      },
       // {
       //   src: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80",
       //   title: "Vivienda Familiar - Extra 1",
@@ -370,7 +365,22 @@ window.addEventListener("load", function () {
       src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Balcones10.jpg?format=auto",
       title: "Seguridad en Balcones",
       desc: "Mallas resistentes para balcones y ventanas.",
-    }
+    },
+    {
+      src: "assets/img/trabajos/malla_Edificio/balcon_Mallas_Saru_Chile_4.jpg?format=auto",
+      title: "Balcon Mallas Saru Chile",
+      desc: "Protección en balcones con mallas de alta calidad.",
+    },
+    {
+      src: "assets/img/trabajos/malla_Edificio/balcon_Mallas_Saru_Chile_5.jpg?format=auto",
+      title: "Balcon Mallas Saru Chile",
+      desc: "Protección en balcones con mallas de alta calidad.",
+    },
+    {
+      src: "assets/img/trabajos/malla_Edificio/balcon_Mallas_Saru_Chile_6.jpg?format=auto",
+      title: "Balcon Mallas Saru Chile",
+      desc: "Protección en balcones con mallas de alta calidad.",
+    },
   );
 
   // Adding all images from malla_Residencial to the lightbox gallery for Vivienda Familiar
@@ -399,7 +409,27 @@ window.addEventListener("load", function () {
       src: "assets/img/trabajos/malla_Residencial/mallas-Saru_residencial.jpg?format=auto",
       title: "Protección de Ventanas",
       desc: "Mallas de seguridad para ventanas residenciales.",
-    }
+    },
+    {
+      src: "assets/img/trabajos/malla_Residencial/mallas-Saru_residencial2.jpg?format=auto",
+      title: "Protección de Ventanas",
+      desc: "Mallas de seguridad para ventanas residenciales.",
+    },
+    {
+      src: "assets/img/trabajos/malla_Residencial/mallas-Saru_residencial3.jpg?format=auto",
+      title: "Protección de Ventanas",
+      desc: "Mallas de seguridad para ventanas residenciales.",
+    },
+    {
+      src: "assets/img/trabajos/malla_Residencial/mallas-Saru_residencial4.jpg?format=auto",
+      title: "Protección de Ventanas",
+      desc: "Mallas de seguridad para ventanas residenciales.",
+    },
+    {
+      src: "assets/img/trabajos/malla_Residencial/mallas-Saru_residencial5.jpg?format=auto",
+      title: "Protección de Ventanas",
+      desc: "Mallas de seguridad para ventanas residenciales.",
+    },
   );
   lightboxGallery[2].push(
     {
@@ -421,7 +451,7 @@ window.addEventListener("load", function () {
       src: "/assets/img/trabajos/convenios/tarjeta_Vecino_viveLaForida_Mallas_Saru_4.jpg?format=auto",
       title: "Convenio Tarjeta Vecino Vive La Forida",
       desc: "Si cuentas con tu tarjeta Vecino obtienes descuentos especiales en nuestros servicios.",
-    }
+    },
   );
   lightboxGallery[3].push(
     {
@@ -453,7 +483,7 @@ window.addEventListener("load", function () {
       src: "assets/img/trabajos/clientes_Satisfechos/mallasSaru_Proteccion_Mascotas6.jpg?format=auto",
       title: "Protección Mascotas",
       desc: "Mallas de seguridad para proteger a tus mascotas.",
-    }
+    },
   );
   lightboxGallery[4].push(
     {
@@ -480,7 +510,7 @@ window.addEventListener("load", function () {
       src: "/assets/img/trabajos/mantenimiento/mantenimiento_Mallas_Saru_5.jpg?format=auto",
       title: "Mantenimiento de Mallas",
       desc: "Servicios de mantenimiento para mallas de seguridad.",
-    }
+    },
   );
 
   const lightboxModal = document.getElementById("lightboxModal");
@@ -560,4 +590,40 @@ window.addEventListener("load", function () {
       if (e.key === "Escape") closeLightbox();
     }
   });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const modalElement = document.getElementById("modalDescuento");
+  if (!modalElement) return;
+
+  const modal = new bootstrap.Modal(modalElement, {
+    backdrop: true,
+    keyboard: true,
+  });
+
+  const whatsappNumber = "56972022406";
+  const defaultMessage =
+    "Hola, me interesa el descuento del 10% en mi primer servicio. ¿Podrían proporcionarme más información?";
+
+  const btnWhatsApp = document.getElementById("btnWhatsApp");
+  if (btnWhatsApp) {
+    btnWhatsApp.href = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+      defaultMessage,
+    )}`;
+    btnWhatsApp.target = "_blank";
+  }
+
+  const badge = modalElement.querySelector(".descuento-badge");
+  if (badge) {
+    badge.textContent = "10% DE DESCUENTO";
+  }
+
+  const closeButton = modalElement.querySelector('[data-bs-dismiss="modal"]');
+  if (closeButton) {
+    closeButton.addEventListener("click", () => modal.hide());
+  }
+
+  setTimeout(() => {
+    modal.show();
+  }, 1000);
 });
