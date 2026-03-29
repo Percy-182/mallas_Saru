@@ -241,7 +241,7 @@ window.addEventListener("load", function () {
     //Convenios//
     [
       {
-        src: "/assets/img/trabajos/convenios/tarjeta_Vecino_viveLaForida_Mallas_Saru_4.jpg?format=auto",
+        src: "assets/img/trabajos/convenios/tarjeta_Vecino_viveLaForida_Mallas_Saru_4.jpg?format=auto",
         title: "Convenios",
         desc: "Descuentos especiales con tarjeta Vecino Vive La Florida",
       },
@@ -433,22 +433,22 @@ window.addEventListener("load", function () {
   );
   lightboxGallery[2].push(
     {
-      src: "/assets/img/trabajos/convenios/tarjeta_Vecino_viveLaForida_Mallas_Saru_1.jpg?format=auto",
+      src: "assets/img/trabajos/convenios/tarjeta_Vecino_viveLaForida_Mallas_Saru_1.jpg?format=auto",
       title: "Convenio Tarjeta Vecino Vive La Forida",
       desc: "Si cuentas con tu tarjeta Vecino obtienes descuentos especiales en nuestros servicios.",
     },
     {
-      src: "/assets/img/trabajos/convenios/tarjeta_Vecino_viveLaForida_Mallas_Saru_2.jpg?format=auto",
+      src: "assets/img/trabajos/convenios/tarjeta_Vecino_viveLaForida_Mallas_Saru_2.jpg?format=auto",
       title: "Convenio Tarjeta Vecino Vive La Forida",
       desc: "Si cuentas con tu tarjeta Vecino obtienes descuentos especiales en nuestros servicios.",
     },
     {
-      src: "/assets/img/trabajos/convenios/tarjeta_Vecino_viveLaForida_Mallas_Saru_3.jpg?format=auto",
+      src: "assets/img/trabajos/convenios/tarjeta_Vecino_viveLaForida_Mallas_Saru_3.jpg?format=auto",
       title: "Convenio Tarjeta Vecino Vive La Forida",
       desc: "Si cuentas con tu tarjeta Vecino obtienes descuentos especiales en nuestros servicios.",
     },
     {
-      src: "/assets/img/trabajos/convenios/tarjeta_Vecino_viveLaForida_Mallas_Saru_4.jpg?format=auto",
+      src: "assets/img/trabajos/convenios/tarjeta_Vecino_viveLaForida_Mallas_Saru_4.jpg?format=auto",
       title: "Convenio Tarjeta Vecino Vive La Forida",
       desc: "Si cuentas con tu tarjeta Vecino obtienes descuentos especiales en nuestros servicios.",
     },
@@ -487,27 +487,27 @@ window.addEventListener("load", function () {
   );
   lightboxGallery[4].push(
     {
-      src: "/assets/img/trabajos/mantenimiento/mantenimiento_Mallas_Saru_1.jpg?format=auto",
+      src: "assets/img/trabajos/mantenimiento/mantenimiento_Mallas_Saru_1.jpg?format=auto",
       title: "Mantenimiento de Mallas",
       desc: "Servicios de mantenimiento para mallas de seguridad.",
     },
     {
-      src: "/assets/img/trabajos/mantenimiento/mantenimiento_Mallas_Saru_2.jpg?format=auto",
+      src: "assets/img/trabajos/mantenimiento/mantenimiento_Mallas_Saru_2.jpg?format=auto",
       title: "Mantenimiento de Mallas",
       desc: "Servicios de mantenimiento para mallas de seguridad.",
     },
     {
-      src: "/assets/img/trabajos/mantenimiento/mantenimiento_Mallas_Saru_3.jpg?format=auto",
+      src: "assets/img/trabajos/mantenimiento/mantenimiento_Mallas_Saru_3.jpg?format=auto",
       title: "Mantenimiento de Mallas",
       desc: "Servicios de mantenimiento para mallas de seguridad.",
     },
     {
-      src: "/assets/img/trabajos/mantenimiento/mantenimiento_Mallas_Saru_4.jpg?format=auto",
+      src: "assets/img/trabajos/mantenimiento/mantenimiento_Mallas_Saru_4.jpg?format=auto",
       title: "Mantenimiento de Mallas",
       desc: "Servicios de mantenimiento para mallas de seguridad.",
     },
     {
-      src: "/assets/img/trabajos/mantenimiento/mantenimiento_Mallas_Saru_5.jpg?format=auto",
+      src: "assets/img/trabajos/mantenimiento/mantenimiento_Mallas_Saru_5.jpg?format=auto",
       title: "Mantenimiento de Mallas",
       desc: "Servicios de mantenimiento para mallas de seguridad.",
     },

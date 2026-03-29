@@ -374,12 +374,17 @@ h6 {
 
 .portfolio-item img {
   width: 100%;
-  height: auto;
-  aspect-ratio: 1/1;
+  height: 220px;
   object-fit: cover;
   display: block;
   transition: transform 0.5s;
   border-radius: 8px 8px 0 0;
+}
+
+@media (max-width: 768px) {
+  .portfolio-item img {
+    height: 180px;
+  }
 }
 
 .portfolio-overlay {
