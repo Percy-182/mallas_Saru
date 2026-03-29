@@ -608,7 +608,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const btnWhatsApp = document.getElementById("btnWhatsApp");
   if (btnWhatsApp) {
     const waHref = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-      defaultMessage,
+      defaultMessage
     )}`;
     btnWhatsApp.href = waHref;
     btnWhatsApp.target = "_blank";
