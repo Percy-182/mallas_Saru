@@ -209,11 +209,11 @@ window.addEventListener("load", function () {
   const lightboxGallery = [
     //Mallas para Edificios//
     [
-      {
-        src: "https://cl.habcdn.com/photos/business/big/img-20190812-183839-381807.jpg",
-        title: "Edificio Residencial",
-        desc: "Mallas de seguridad en balcones",
-      },
+      // {
+      //   src: "https://cl.habcdn.com/photos/business/big/img-20190812-183839-381807.jpg",
+      //   title: "Edificio Residencial",
+      //   desc: "Mallas de seguridad en balcones",
+      // },
       // {
       //   src: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80",
       //   title: "Edificio Residencial - Extra 1",
@@ -267,119 +267,29 @@ window.addEventListener("load", function () {
   // Adding all images from malla_Edificio to the lightbox gallery for Mallas para Edificios
   lightboxGallery[0].push(
     {
-      src: "assets/img/trabajos/malla_Edificio/balcon_Mallas_Saru_Chile_1.jpg?format=auto",
+      src: "assets/img/trabajos/malla_Edificio/1.jpg?format=auto",
       title: "Balcon Mallas Saru Chile",
-      desc: "Protección en balcones con mallas de alta calidad.",
+      desc: "Tu balcón, seguro y libre.",
     },
     {
-      src: "assets/img/trabajos/malla_Edificio/balcon_Mallas_Saru_Chile_2.jpg?format=auto",
+      src: "assets/img/trabajos/malla_Edificio/2.jpg?format=auto",
       title: "Balcon Mallas Saru Chile",
-      desc: "Instalación profesional en balcones residenciales.",
+      desc: "Protección sin perder la vista.",
     },
     {
-      src: "assets/img/trabajos/malla_Edificio/balcon_Mallas_Saru_Chile_3.jpg?format=auto",
+      src: "assets/img/trabajos/malla_Edificio/3.jpg?format=auto",
       title: "Balcon Mallas Saru Chile",
-      desc: "Seguridad y estética en altura.",
+      desc: "Disfruta la altura con tranquilidad.",
     },
     {
-      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Proteccion_Ventanas1.jpg?format=auto",
-      title: "Protección Ventanas",
-      desc: "Mallas de seguridad para ventanas.",
+      src: "assets/img/trabajos/malla_Edificio/4.jpg?format=auto",
+      title: "Balcones seguros, vistas intactas.",
+      desc: "",
     },
     {
-      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Proteccion_Ventanas2.jpg?format=auto",
-      title: "Protección Ventanas",
-      desc: "Instalación de mallas en ventanas residenciales.",
-    },
-    {
-      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Altura1.jpg?format=auto",
-      title: "Seguridad en Altura",
-      desc: "Protección en altura con mallas resistentes.",
-    },
-    {
-      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Altura2.jpg?format=auto",
-      title: "Seguridad en Altura",
-      desc: "Mallas de alta calidad para seguridad en altura.",
-    },
-    {
-      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Altura3.jpg?format=auto",
-      title: "Seguridad en Altura",
-      desc: "Instalación profesional de mallas en altura.",
-    },
-    {
-      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Altura5.jpg?format=auto",
-      title: "Seguridad en Altura",
-      desc: "Protección confiable en áreas de altura.",
-    },
-    {
-      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Altura6.jpg?format=auto",
-      title: "Seguridad en Altura",
-      desc: "Mallas resistentes para balcones y ventanas.",
-    },
-    {
-      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Balcones1.jpg?format=auto",
-      title: "Seguridad en Balcones",
-      desc: "Mallas resistentes para balcones y ventanas.",
-    },
-    {
-      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Balcones2.jpg?format=auto",
-      title: "Seguridad en Balcones",
-      desc: "Mallas resistentes para balcones y ventanas.",
-    },
-    {
-      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Balcones3.jpg?format=auto",
-      title: "Seguridad en Balcones",
-      desc: "Mallas resistentes para balcones y ventanas.",
-    },
-    {
-      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Balcones4.jpg?format=auto",
-      title: "Seguridad en Balcones",
-      desc: "Mallas resistentes para balcones y ventanas.",
-    },
-    {
-      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Balcones5.jpg?format=auto",
-      title: "Seguridad en Balcones",
-      desc: "Mallas resistentes para balcones y ventanas.",
-    },
-    {
-      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Balcones6.jpg?format=auto",
-      title: "Seguridad en Balcones",
-      desc: "Mallas resistentes para balcones y ventanas.",
-    },
-    {
-      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Balcones7.jpg?format=auto",
-      title: "Seguridad en Balcones",
-      desc: "Mallas resistentes para balcones y ventanas.",
-    },
-    {
-      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Balcones8.jpg?format=auto",
-      title: "Seguridad en Balcones",
-      desc: "Mallas resistentes para balcones y ventanas.",
-    },
-    {
-      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Balcones9.jpg?format=auto",
-      title: "Seguridad en Balcones",
-      desc: "Mallas resistentes para balcones y ventanas.",
-    },
-    {
-      src: "assets/img/trabajos/malla_Edificio/mallas_Saru_Seguridad_Balcones10.jpg?format=auto",
-      title: "Seguridad en Balcones",
-      desc: "Mallas resistentes para balcones y ventanas.",
-    },
-    {
-      src: "assets/img/trabajos/malla_Edificio/balcon_Mallas_Saru_Chile_4.jpg?format=auto",
-      title: "Balcon Mallas Saru Chile",
-      desc: "Protección en balcones con mallas de alta calidad.",
-    },
-    {
-      src: "assets/img/trabajos/malla_Edificio/balcon_Mallas_Saru_Chile_5.jpg?format=auto",
-      title: "Balcon Mallas Saru Chile",
-      desc: "Protección en balcones con mallas de alta calidad.",
-    },
-    {
-      src: "assets/img/trabajos/malla_Edificio/balcon_Mallas_Saru_Chile_6.jpg?format=auto",
-      title: "Balcon Mallas Saru Chile",
-      desc: "Protección en balcones con mallas de alta calidad.",
+      src: "assets/img/trabajos/malla_Edificio/5.jpg?format=auto",
+      title: "Seguridad que no se nota.",
+      desc: "",
     },
   );
 
@@ -608,7 +518,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const btnWhatsApp = document.getElementById("btnWhatsApp");
   if (btnWhatsApp) {
     const waHref = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-      defaultMessage
+      defaultMessage,
     )}`;
     btnWhatsApp.href = waHref;
     btnWhatsApp.target = "_blank";
