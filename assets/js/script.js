@@ -365,34 +365,29 @@ window.addEventListener("load", function () {
   );
   lightboxGallery[3].push(
     {
-      src: "assets/img/trabajos/clientes_Satisfechos/mallasSaru_Proteccion_Mascotas1.jpg?format=auto",
-      title: "Protección Mascotas",
-      desc: "Mallas de seguridad para proteger a tus mascotas.",
+      src: "assets/img/trabajos/clientes_Satisfechos/1.jpg?format=auto",
+      title: "Seguridad para tus seres queridos",
+      desc: "",
     },
     {
-      src: "assets/img/trabajos/clientes_Satisfechos/mallasSaru_Proteccion_Mascotas2.jpg?format=auto",
-      title: "Protección Mascotas",
-      desc: "Mallas de seguridad para proteger a tus mascotas.",
+      src: "assets/img/trabajos/clientes_Satisfechos/2.jpg?format=auto",
+      title: "Protección para gatos curiosos",
+      desc: "",
     },
     {
-      src: "assets/img/trabajos/clientes_Satisfechos/mallasSaru_Proteccion_Mascotas3.jpg?format=auto",
-      title: "Protección Mascotas",
-      desc: "Mallas de seguridad para proteger a tus mascotas.",
+      src: "assets/img/trabajos/clientes_Satisfechos/3.jpg?format=auto",
+      title: "Evita caídas, gana tranquilidad",
+      desc: "",
     },
     {
-      src: "assets/img/trabajos/clientes_Satisfechos/mallasSaru_Proteccion_Mascotas4.jpg?format=auto",
-      title: "Protección Mascotas",
-      desc: "Mallas de seguridad para proteger a tus mascotas.",
+      src: "assets/img/trabajos/clientes_Satisfechos/4.jpg?format=auto",
+      title: "Tranquilidad garantizada",
+      desc: "",
     },
     {
-      src: "assets/img/trabajos/clientes_Satisfechos/mallasSaru_Proteccion_Mascotas5.jpg?format=auto",
-      title: "Protección Mascotas",
-      desc: "Mallas de seguridad para proteger a tus mascotas.",
-    },
-    {
-      src: "assets/img/trabajos/clientes_Satisfechos/mallasSaru_Proteccion_Mascotas6.jpg?format=auto",
-      title: "Protección Mascotas",
-      desc: "Mallas de seguridad para proteger a tus mascotas.",
+      src: "assets/img/trabajos/clientes_Satisfechos/5.jpg?format=auto",
+      title: "Protege lo que más importa",
+      desc: "",
     },
   );
   lightboxGallery[4].push(
