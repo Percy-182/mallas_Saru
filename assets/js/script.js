@@ -296,49 +296,29 @@ window.addEventListener("load", function () {
   // Adding all images from malla_Residencial to the lightbox gallery for Vivienda Familiar
   lightboxGallery[1].push(
     {
-      src: "assets/img/trabajos/malla_Residencial/mallas_Saru_Proteccion_Escalera1.jpg?format=auto",
-      title: "Protección Escalera 1",
-      desc: "Mallas de seguridad para escaleras residenciales.",
+      src: "assets/img/trabajos/malla_Residencial/1.jpg?format=auto",
+      title: "Protección de Ventanas",
+      desc: "",
     },
     {
-      src: "assets/img/trabajos/malla_Residencial/mallas_Saru_Proteccion_Escalera2.jpg?format=auto",
-      title: "Protección Escalera",
-      desc: "Instalación de mallas en escaleras interiores.",
+      src: "assets/img/trabajos/malla_Residencial/2.jpg?format=auto",
+      title: "Protección",
+      desc: "",
     },
     {
-      src: "assets/img/trabajos/malla_Residencial/mallas_Saru_Proteccion_Escalera3.jpg?format=auto",
-      title: "Protección Escalera",
-      desc: "Soluciones de seguridad para escaleras modernas.",
+      src: "assets/img/trabajos/malla_Residencial/3.jpg?format=auto",
+      title: "Protección",
+      desc: "",
     },
     {
-      src: "assets/img/trabajos/malla_Residencial/mallas_Saru_Proteccion_Ventanas3.jpg?format=auto",
+      src: "assets/img/trabajos/malla_Residencial/4.jpg?format=auto",
       title: "Protección Ventanas",
-      desc: "Mallas de seguridad para ventanas residenciales.",
+      desc: "",
     },
     {
-      src: "assets/img/trabajos/malla_Residencial/mallas-Saru_residencial.jpg?format=auto",
+      src: "assets/img/trabajos/malla_Residencial/5.jpg?format=auto",
       title: "Protección de Ventanas",
-      desc: "Mallas de seguridad para ventanas residenciales.",
-    },
-    {
-      src: "assets/img/trabajos/malla_Residencial/mallas-Saru_residencial2.jpg?format=auto",
-      title: "Protección de Ventanas",
-      desc: "Mallas de seguridad para ventanas residenciales.",
-    },
-    {
-      src: "assets/img/trabajos/malla_Residencial/mallas-Saru_residencial3.jpg?format=auto",
-      title: "Protección de Ventanas",
-      desc: "Mallas de seguridad para ventanas residenciales.",
-    },
-    {
-      src: "assets/img/trabajos/malla_Residencial/mallas-Saru_residencial4.jpg?format=auto",
-      title: "Protección de Ventanas",
-      desc: "Mallas de seguridad para ventanas residenciales.",
-    },
-    {
-      src: "assets/img/trabajos/malla_Residencial/mallas-Saru_residencial5.jpg?format=auto",
-      title: "Protección de Ventanas",
-      desc: "Mallas de seguridad para ventanas residenciales.",
+      desc: "",
     },
   );
   lightboxGallery[2].push(
