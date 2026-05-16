@@ -297,27 +297,27 @@ window.addEventListener("load", function () {
   lightboxGallery[1].push(
     {
       src: "assets/img/trabajos/malla_Residencial/1.jpg?format=auto",
-      title: "Protección de Ventanas",
+      title: "Tu Ventana segura y Libre",
       desc: "",
     },
     {
       src: "assets/img/trabajos/malla_Residencial/2.jpg?format=auto",
-      title: "Protección",
+      title: "Disfrute la vista con tranquilidad",
       desc: "",
     },
     {
       src: "assets/img/trabajos/malla_Residencial/3.jpg?format=auto",
-      title: "Protección",
+      title: "Ventanas protegidas, vistas intactas",
       desc: "",
     },
     {
       src: "assets/img/trabajos/malla_Residencial/4.jpg?format=auto",
-      title: "Protección Ventanas",
+      title: "Seguridad discreta para cada ventana",
       desc: "",
     },
     {
       src: "assets/img/trabajos/malla_Residencial/5.jpg?format=auto",
-      title: "Protección de Ventanas",
+      title: "Protección de confianza para tu hogar",
       desc: "",
     },
   );
